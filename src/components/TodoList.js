@@ -9,9 +9,13 @@ function Todolist(props) {
         onClick={e=>{
             props.deleteItem(props.index)
         }}></i>
+        <button 
+          onClick={e=>{
+            props.updateList(props.index, prompt('Enter New Task:'))
+          }}>Edit</button>
         </span>
     </li>
   )
 }
 
-export default Todolist
+export default Todolist;

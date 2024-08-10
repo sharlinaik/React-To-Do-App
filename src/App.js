@@ -13,6 +13,9 @@ function App() {
     newListTodo.splice(key,1)
     setListTodo([...newListTodo])
   }
+  const updateItem = (index, newValue) =>{
+    setListTodo(listTodo.map((item, i)=>(i === index ? newValue : item)));
+  }
   return (
     <div className="main-container">
       <div className="center-container">
@@ -21,7 +24,7 @@ function App() {
         <hr/>
         {listTodo.map((listItem,i)=>{
           return (
-            <Todolist key={i} index={i} item={listItem} deleteItem={deleteListItem}/>
+            <Todolist key={i} index={i} item={listItem} deleteItem={deleteListItem} updateList={updateItem}/>
           )
         })}
       </div>
