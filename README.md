@@ -9,6 +9,7 @@ Here is the screenshot of the project.
   <li> Add Todo by clicking add button</li>
   <li> Add Todo by pressing Enter key</li>
   <li> Delete Todo</li>
+  <li>Update Todo</li>
  </ol>
  
  
